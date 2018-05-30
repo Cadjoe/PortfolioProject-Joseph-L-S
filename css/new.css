@@ -1,0 +1,301 @@
+html {
+    font-family: "monospace", sans-serif;
+    font-size: 16px;
+    /* body box and shadow */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    margin-left: auto;
+    margin-right: auto;
+    width: 1000px;
+    justify-content: center;
+}
+
+/* Header content layout */
+.container {
+    background-color: dodgerblue;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+/* Site logo default styles */
+.logo {
+    width: 10%;
+    height: 30%;
+    padding: 10px 10px 10px 10px;
+    padding-right: 10px;
+}
+
+/* div container for both the developer name and title layout */
+.headline {
+    width: 85%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Developer name layout */
+.name {
+    text-align: right;
+    margin-right: 0%;
+    font-size: 36px;  
+}
+
+/* Title color and layout */
+.title {
+    text-align: right;
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+/* Horizontal line styles */
+hr {
+    margin-bottom: 1rem;
+    border: 0;
+    box-shadow: 0 2px 5px rgba(15, 15, 15, 0.932);
+    height: 3px;
+}
+
+/* Featured-Projects heading layout */
+.projects {
+    margin-top: 20.440px;
+    margin-bottom: 1.440px;
+}
+
+/* Featured projects external links text formating */
+.outro {
+    color: dodgerblue;
+    font-weight: 500;
+}
+
+/* Set cursor to pointer on images and links */
+img, a {
+    cursor: pointer;
+}
+
+/* Media queries start here */
+/* media screen  size of 1000px and above - settings */
+@media screen and (min-width: 1000px) {
+    .flex-container {
+        background-color: #7d97ad;
+        padding: 10px 10px 10px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-between; 
+    }
+
+    .main-image {
+        width: 100%;
+        height: 50%;
+    }
+
+    .featured-image-3,
+    .featured-image-2,
+    .featured-image-1 {
+        width: 300px;
+        height: 50%;
+        margin-left: 0%;
+    }
+
+    .figure-border {
+        width: 310px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-around;
+        /* padding: 5px 5px 5px 5px; */
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .animal-trading-cardv1,
+    .animal-trading-cardv2,
+    .mock-up-article,
+    .outro {
+        padding-top: 0px;
+        text-decoration-line: none;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .outro {
+        color: blue;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+    html {
+        font-family: "monospace", sans-serif;
+        font-size: 16px;
+        /* body box and shadow */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+        margin-left: auto;
+        margin-right: auto;
+        width: 768px;
+        justify-content: center;
+    }
+
+    .flex-container {
+        /* background-color: cadetblue; */
+        /* padding: 10px 10px 10px 10px; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center; 
+        width: 760px;
+    }
+    
+    .main-image {
+        width: 750px;
+        height: 50%;
+    }
+
+    .container {
+        width: 750px;
+    }
+
+    .featured-image-3,
+    .featured-image-2,
+    .featured-image-1 {
+        width: 750px;
+        height: 50%;
+        margin-left: 0%;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .figure-border {
+        width: 758px;
+        /* border: solid #f0f0f0 2px; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-around;
+        padding: 5px 5px 5px 5px;
+        /* padding-top: 5px;
+        padding-bottom: 5px; */
+    }
+
+    .animal-trading-cardv1,
+    .animal-trading-cardv2,
+    .mock-up-article,
+    .outro {
+        padding-top: 0px;
+        text-decoration-line: none;
+        margin: 0px 0px 0px 0px;
+    }
+}
+
+@media screen and (min-width: 360px) and (max-width: 767px) {
+    html {
+        font-family: "monospace", sans-serif;
+        font-size: 16px;
+        /* body box and shadow */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+        margin-left: auto;
+        margin-right: auto;
+        width: 360px;
+        justify-content: center;
+    }
+
+    .flex-container {
+        /* background-color: cadetblue; */
+        /* padding: 10px 10px 10px 10px; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center; 
+        width: 350px;
+    }
+    
+    .main-image {
+        width: 340px;
+        height: 50%;
+    }
+
+    .container {
+        width: 340px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .name {
+        text-transform: uppercase;
+        font-size: 18px;
+        color: whitesmoke;
+    }
+
+    .title {
+        color: #000;
+    }
+
+    .projects {
+        font-size: 25px;
+        color: dodgerblue;
+        background: #000;
+        padding: 20px 15px 5px 5px;
+        text-align: center;
+    }
+
+    .featured-image-3,
+    .featured-image-2,
+    .featured-image-1 {
+        width: 340px;
+        height: 50%;
+        margin-left: 0%;
+        padding-bottom: 10px;
+        padding-top: 20px;
+    }
+
+    .figure-border {
+        width: 358px;
+        /* border: solid #f0f0f0 2px; */
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: space-around;
+        padding: 5px 5px 5px 5px;
+        /* padding-top: 5px;
+        padding-bottom: 5px; */
+    }
+
+    .animal-trading-cardv1,
+    .animal-trading-cardv2,
+    .mock-up-article,
+    .outro {
+        padding-top: 0px;
+        text-decoration-line: none;
+        margin: 0px 0px 0px 0px;
+    }
+}
+/* End of media queries */
+
+/* Footer styles start here */
+/* Footer background color, font formating and layout */
+.footer {
+    background-color: #000;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 10px 10px 20px 10px;
+}
+
+/* Social links to linkedin and github */
+.linkedin, 
+.github {
+    text-decoration-line: none;
+    color: dodgerblue;
+    padding: 2.5px 2.5px 2.5px 2.5px;
+    cursor: pointer;
+}
+
+.author {
+    color: #f0f0f0;   
+}
+/* Footer styles end here */
